@@ -39,3 +39,27 @@ luac.out
 *.x86_64
 *.hex
 
+# --- GTX 327 package ---
+
+# The 3D model ships as .obj files (the generic *.obj rule above is for
+# compiled object files)
+!/scripts/custom_device_GTX327/3D/*.obj
+
+# Only the manual PDF at the root is published
+*.pdf
+!/GTX327*.pdf
+
+# The XLua 2 runtime is not part of this package (get it from the XLua repository)
+*.xpl
+
+# Written by the unit at run time: the pilot's levels, last code, mode and
+# flight time, and the settings file's backups and temporary copy
+gtx327_pilot.ini
+*.bak
+*.bak[0-9]
+*.tmp
+
+# Editor and tool leftovers
+*.log
+.vscode/
+__pycache__/

@@ -1,0 +1,7 @@
+*.obj -text
+*.png binary
+*.ttf binary
+*.lua text eol=lf
+*.ini text eol=lf
+*.md text eol=lf
+*.py text eol=lf
